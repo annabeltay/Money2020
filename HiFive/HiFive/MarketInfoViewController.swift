@@ -13,7 +13,7 @@ class MarketInfoViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var questionMark: UIButton!
     @IBOutlet weak var youtubePlayer: YTPlayerView!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +29,17 @@ class MarketInfoViewController: UIViewController {
         questionMark.layer.borderColor = UIColor.white.cgColor
         questionMark.layer.cornerRadius = 25
         
-        textField.borderStyle = UITextBorderStyle.roundedRect
-        textField.layer.borderColor = UIColor.white.cgColor
-        textField.textColor = UIColor.white
-        textField.font = UIFont(name: "American Typewriter", size: 20)
+        textView.layer.borderWidth = 2;
+        textView.layer.borderColor = UIColor.white.cgColor
+        textView.textColor = UIColor.white
+        textView.font = UIFont(name: "American Typewriter", size: 20)
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
         view.addGestureRecognizer(tapGesture)
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(Login.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(Login.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +48,7 @@ class MarketInfoViewController: UIViewController {
     }
     
     func tap(_ sender: UITapGestureRecognizer) {
-        textField.resignFirstResponder()
+        textView.resignFirstResponder()
     }
     
     
