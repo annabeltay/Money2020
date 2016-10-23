@@ -9,9 +9,12 @@
 import UIKit
 
 class GoalSetupViewController: UIViewController {
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField.layer.backgroundColor = UIColor.init(red: 214.0, green: 208.0, blue: 104.0, alpha: 1.0).cgColor
+ 
     }
     
 }
