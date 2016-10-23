@@ -12,7 +12,7 @@ import Alamofire
 class PaymentViewController: UIViewController {
     
     @IBOutlet weak var moneyField: UITextField!
-    
+    @IBOutlet weak var textField: UIView!
     @IBAction func fundButtonPressed(_ sender: UIButton) {
         
         let parameters = [
@@ -28,11 +28,18 @@ class PaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tap(_ sender: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
     }
     
 }

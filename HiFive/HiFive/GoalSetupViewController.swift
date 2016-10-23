@@ -15,6 +15,13 @@ class GoalSetupViewController: UIViewController {
         
         textField.layer.backgroundColor = UIColor.init(red: 214.0, green: 208.0, blue: 104.0, alpha: 1.0).cgColor
         textField.layer.cornerRadius = 10
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    func tap(_ sender: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
     }
     
 }
