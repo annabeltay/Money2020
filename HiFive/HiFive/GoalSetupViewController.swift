@@ -14,7 +14,7 @@ class GoalSetupViewController: UIViewController {
         super.viewDidLoad()
         
         textField.layer.backgroundColor = UIColor.init(red: 214.0, green: 208.0, blue: 104.0, alpha: 1.0).cgColor
- 
+        textField.layer.cornerRadius = 10
     }
     
 }
