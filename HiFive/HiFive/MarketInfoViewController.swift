@@ -32,7 +32,7 @@ class MarketInfoViewController: UIViewController {
         textField.borderStyle = UITextBorderStyle.roundedRect
         textField.layer.borderColor = UIColor.white.cgColor
         textField.textColor = UIColor.white
-        textField.font = UIFont(name: "American Typewriter", size: 25)
+        textField.font = UIFont(name: "American Typewriter", size: 20)
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))

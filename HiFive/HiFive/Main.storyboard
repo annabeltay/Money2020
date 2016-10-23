@@ -252,9 +252,10 @@
         <scene sceneID="8e8-6o-R5M">
             <objects>
                 <navigationController id="ekn-Iq-ys3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5WQ-6B-Uf4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5WQ-6B-Uf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
@@ -1014,7 +1015,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="bezel" placeholder="Example: Film a funny marketing video!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-mB-bRl">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="bezel" placeholder="Example: Film a funny marketing video!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-mB-bRl">
                                         <rect key="frame" x="16" y="440" width="343" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1279,10 +1280,10 @@
         <image name="round-add-button" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ErZ-O9-mlW"/>
-        <segue reference="VfX-Zj-fa2"/>
-        <segue reference="2pZ-Y5-vrP"/>
-        <segue reference="U5B-aa-fx3"/>
         <segue reference="G5w-bK-vRp"/>
+        <segue reference="lmm-Tc-XTY"/>
+        <segue reference="uxd-HN-jr0"/>
+        <segue reference="2pZ-Y5-vrP"/>
+        <segue reference="ErZ-O9-mlW"/>
     </inferredMetricsTieBreakers>
 </document>
