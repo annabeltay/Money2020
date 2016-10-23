@@ -80,7 +80,7 @@
         <!--BrowseGoals-->
         <scene sceneID="bs5-6c-nR5">
             <objects>
-                <viewController title="BrowseGoals" id="Bid-G2-TW3" sceneMemberID="viewController">
+                <viewController title="List of goals:" id="Bid-G2-TW3" userLabel="BrowseGoals" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FVg-dR-SwU"/>
                         <viewControllerLayoutGuide type="bottom" id="m3V-oP-58N"/>
@@ -89,13 +89,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="item 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muu-3g-Mh2">
-                                <frame key="frameInset" minX="166" minY="197" width="48" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-X1-LWL">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Raising funds for UNICEF by baking cakes!"/>
+                                <connections>
+                                    <segue destination="WDu-aq-cBW" kind="show" id="2Uk-Jc-7m5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -105,10 +106,37 @@
             </objects>
             <point key="canvasLocation" x="1389.5999999999999" y="519.49025487256381"/>
         </scene>
+        <!--SingleGoal-->
+        <scene sceneID="NAi-3e-WRl">
+            <objects>
+                <viewController title="Raising funds for UNICEF by baking cakes!" id="WDu-aq-cBW" userLabel="SingleGoal" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V0G-eI-OwK"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gA-u7-xMD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X3N-ye-D5u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-7h-KYH">
+                                <frame key="frameInset" minX="46" minY="123" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EF7-rq-qTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="519"/>
+        </scene>
         <!--GoalSetup-->
         <scene sceneID="RJp-pi-ubT">
             <objects>
-                <viewController title="GoalSetup" id="UuU-Ki-CIj" userLabel="GoalSetup" customClass="SetupGoalViewController" sceneMemberID="viewController">
+                <viewController title="Tell us your goal!" id="UuU-Ki-CIj" userLabel="GoalSetup" customClass="GoalSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bEB-Ys-OvF"/>
                         <viewControllerLayoutGuide type="bottom" id="OSF-Vg-k8P"/>
@@ -139,7 +167,8 @@
                                 <frame key="frameInset" minX="86" minY="229" width="234" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoi-Xd-uLc">
                                 <frame key="frameInset" minX="32" minY="232" width="46" height="21"/>
@@ -164,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="1389.5999999999999" y="-204.64767616191907"/>
         </scene>
-        <!--Charity Setup-->
+        <!--CharitySetup-->
         <scene sceneID="Zh9-a7-Izw">
             <objects>
-                <viewController title="Charity Setup" id="yxc-fG-Jh1" customClass="CharitySetupViewController" sceneMemberID="viewController">
+                <viewController title="Choose charity" id="yxc-fG-Jh1" userLabel="CharitySetup" customClass="CharitySetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zSt-QW-6oX"/>
                         <viewControllerLayoutGuide type="bottom" id="Kar-nh-rzO"/>
@@ -216,6 +245,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="2IK-IS-Cei"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,10 +272,156 @@
             </objects>
             <point key="canvasLocation" x="2316" y="-905"/>
         </scene>
-        <!--Corporate Setup-->
+        <!--RecipeSetup-->
+        <scene sceneID="pyg-XJ-G73">
+            <objects>
+                <viewController title="Choose recipe" id="qen-YI-zt4" userLabel="RecipeSetup" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQ9-mk-z8B"/>
+                        <viewControllerLayoutGuide type="bottom" id="jng-tN-11Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWJ-RU-Oqf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-LZ-1LJ">
+                                <color key="backgroundColor" red="0.7362842503" green="1" blue="0.92230426759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="JgV-xI-pCD"/>
+                                </constraints>
+                                <state key="normal" title="Something"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWN-RC-dCd">
+                                <color key="backgroundColor" red="1" green="0.77408973299999995" blue="0.80103911120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Others..."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-Lc-qmN" userLabel="SetupComplete">
+                                <color key="backgroundColor" red="1" green="0.99393515290000001" blue="0.82039870839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Baking cakes">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="xLz-77-i9G" kind="show" id="SVp-Pv-NvL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHF-9N-xqU">
+                                <color key="backgroundColor" red="0.6831450013" green="1" blue="0.6932584571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="FIe-fW-095"/>
+                                    <constraint firstAttribute="width" constant="188" id="raz-xH-qt8"/>
+                                </constraints>
+                                <state key="normal" title="Doctors Without Borders">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Making Keychains">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHF-9N-xqU" firstAttribute="top" secondItem="Fdz-Lc-qmN" secondAttribute="top" id="03m-EE-JHw"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="leading" secondItem="Fdz-Lc-qmN" secondAttribute="leading" id="1w9-2n-TYi"/>
+                            <constraint firstAttribute="trailing" secondItem="aHF-9N-xqU" secondAttribute="trailing" id="87g-jY-6fc"/>
+                            <constraint firstItem="QWN-RC-dCd" firstAttribute="top" secondItem="aHF-9N-xqU" secondAttribute="bottom" id="AeD-KT-WqX"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="firstBaseline" secondItem="QWN-RC-dCd" secondAttribute="baseline" id="FbK-Do-naB"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="trailing" secondItem="Fdz-Lc-qmN" secondAttribute="trailing" id="NgM-Gh-hg5"/>
+                            <constraint firstItem="Fdz-Lc-qmN" firstAttribute="top" secondItem="WQ9-mk-z8B" secondAttribute="bottom" id="Qjx-Q4-UU1"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="baseline" secondItem="QWN-RC-dCd" secondAttribute="firstBaseline" id="VjB-V5-EjQ"/>
+                            <constraint firstItem="aHF-9N-xqU" firstAttribute="trailing" secondItem="QWN-RC-dCd" secondAttribute="trailing" id="cQU-8U-tNY"/>
+                            <constraint firstItem="aHF-9N-xqU" firstAttribute="leading" secondItem="QWN-RC-dCd" secondAttribute="leading" id="eDD-a9-1hE"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="top" secondItem="QWN-RC-dCd" secondAttribute="top" id="fXF-Gn-Zy9"/>
+                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="bottom" secondItem="jng-tN-11Z" secondAttribute="top" id="gUl-Lp-VOv"/>
+                            <constraint firstItem="Fdz-Lc-qmN" firstAttribute="leading" secondItem="wWJ-RU-Oqf" secondAttribute="leading" id="hi2-VT-qQz"/>
+                            <constraint firstItem="aHF-9N-xqU" firstAttribute="bottom" secondItem="Fdz-Lc-qmN" secondAttribute="bottom" id="lBE-oR-fPB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVR-wq-nim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3239" y="-486"/>
+        </scene>
+        <!--SetupComplete-->
+        <scene sceneID="ggK-D7-r2Y">
+            <objects>
+                <viewController title="Setup Complete!" id="xLz-77-i9G" userLabel="SetupComplete" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGW-nJ-pOE"/>
+                        <viewControllerLayoutGuide type="bottom" id="439-9c-qhZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bt3-65-H9E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Well_done.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-BL-Wlj">
+                                <frame key="frameInset" minY="64" width="375" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOs-UX-DC4">
+                                <frame key="frameInset" minY="465" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See your project!"/>
+                                <connections>
+                                    <segue destination="Bid-G2-TW3" kind="show" id="Xyt-5V-9N8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDK-7v-SWp">
+                                <frame key="frameInset" minY="312" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn how to bake cakes"/>
+                                <connections>
+                                    <segue destination="aFC-Wd-oZB" kind="show" id="Eqz-aO-jLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpi-Xy-VfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4028" y="-486.20689655172418"/>
+        </scene>
+        <!--RecipeLearn-->
+        <scene sceneID="Vap-cW-da2">
+            <objects>
+                <viewController title="Baking a cake" id="aFC-Wd-oZB" userLabel="RecipeLearn" customClass="RecipeLearnViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8EF-dK-MTX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gUC-q9-ZnV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tG1-vU-3FZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5w-fv-VPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4980" y="-486.20689655172418"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="L8f-cl-OTX">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="hV0-LH-Xhe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iH9-xE-Szq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5721" y="-510"/>
+        </scene>
+        <!--CorporateSetup-->
         <scene sceneID="94J-3K-ecW">
             <objects>
-                <viewController title="Corporate Setup" id="bEF-OP-83J" sceneMemberID="viewController">
+                <viewController title="Choose corporate" id="bEF-OP-83J" userLabel="CorporateSetup" customClass="CorporateSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rio-UM-glD"/>
                         <viewControllerLayoutGuide type="bottom" id="c7n-n6-hYo"/>
@@ -257,7 +435,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="188" id="pO3-wS-RPa"/>
                                 </constraints>
-                                <state key="normal" title="American Red Cross"/>
+                                <state key="normal" title="The LEGO Store"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzC-Hk-ZIs">
                                 <color key="backgroundColor" red="1" green="0.77408973299999995" blue="0.80103911120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -270,11 +448,14 @@
                                         <fragment content="Toys R Us">
                                             <attributes>
                                                 <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="LfY-36-80d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjO-HT-TzD">
                                 <color key="backgroundColor" red="0.6831450013" green="1" blue="0.6932584571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -284,7 +465,7 @@
                                 </constraints>
                                 <state key="normal" title="Doctors Without Borders">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Doctors Without Borders">
+                                        <fragment content="LARK Toys">
                                             <attributes>
                                                 <font key="NSFont" metaFont="system" size="15"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -353,4 +534,11 @@
             <point key="canvasLocation" x="474" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Well_done.jpg" width="1300" height="919"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2IK-IS-Cei"/>
+        <segue reference="Xyt-5V-9N8"/>
+    </inferredMetricsTieBreakers>
 </document>
