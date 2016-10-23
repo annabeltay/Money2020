@@ -6,6 +6,7 @@ use_frameworks!
 target 'HiFive' do
     pod 'AFNetworking', '~> 2.6'
     pod "youtube-ios-player-helper", "~> 0.1.4"
+    pod 'Alamofire', '~> 4.0'
 end
 
 target 'HiFiveUITests' do
