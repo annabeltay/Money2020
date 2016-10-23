@@ -11,6 +11,7 @@
 		4FC190801DBCA2B800BE7587 /* GoalSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1907F1DBCA2B800BE7587 /* GoalSetupViewController.swift */; };
 		7B0DA5D91DBCCA6200D8F0A1 /* MarketInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DA5D81DBCCA6200D8F0A1 /* MarketInfoViewController.swift */; };
 		7B0DA5DB1DBCD77800D8F0A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DA5DA1DBCD77800D8F0A1 /* Main.storyboard */; };
+		7B1D16141DBCED6C0030BBFC /* LearningPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16131DBCED6C0030BBFC /* LearningPageViewController.swift */; };
 		7B85CEDE1DBC68E1003E166B /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 7B85CEDD1DBC68E1003E166B /* YTPlayerView-iframe-player.html */; };
 		7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */; };
 		7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A881DBC0E010006CA07 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		7225DD03979DCF9F794ACB23 /* Pods-HiFiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiFiveUITests/Pods-HiFiveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B0DA5D81DBCCA6200D8F0A1 /* MarketInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketInfoViewController.swift; sourceTree = "<group>"; };
 		7B0DA5DA1DBCD77800D8F0A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7B1D16131DBCED6C0030BBFC /* LearningPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningPageViewController.swift; sourceTree = "<group>"; };
 		7B85CEDD1DBC68E1003E166B /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		7B8C0A831DBC0E010006CA07 /* HiFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				4FC1907F1DBCA2B800BE7587 /* GoalSetupViewController.swift */,
 				7B0DA5D81DBCCA6200D8F0A1 /* MarketInfoViewController.swift */,
 				7B955E991DBCE29E0086643A /* PaymentViewController.swift */,
+				7B1D16131DBCED6C0030BBFC /* LearningPageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			files = (
 				7B0DA5D91DBCCA6200D8F0A1 /* MarketInfoViewController.swift in Sources */,
 				7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */,
+				7B1D16141DBCED6C0030BBFC /* LearningPageViewController.swift in Sources */,
 				4FC190801DBCA2B800BE7587 /* GoalSetupViewController.swift in Sources */,
 				7B955E9A1DBCE29E0086643A /* PaymentViewController.swift in Sources */,
 				7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */,
