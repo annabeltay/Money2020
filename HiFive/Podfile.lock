@@ -20,13 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Alamofire (3.3.1)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
+  - Alamofire
+  - youtube-ios-player-helper (~> 0.1.4)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 17d4badb459ec635c90e7eb793058516e58233fc
+PODFILE CHECKSUM: 6cdc5bb0d31c7c12097d7a648a4ce2780996bfee
 
 COCOAPODS: 1.1.1

@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,39 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6w-qO-JQX">
-                                <frame key="frameInset" minX="146" minY="369" width="82" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-iq-Rlu">
+                                <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I am a child!"/>
-                                <connections>
-                                    <segue destination="feU-51-RbI" kind="show" id="bZq-ze-p7N"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to HiFive!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-3W-ylq">
-                                <frame key="frameInset" minX="113" minY="152" width="148" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm2-Eu-bca">
-                                <frame key="frameInset" minX="143" minY="440" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I am an adult"/>
-                            </button>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="blF-J0-qd0">
+                                        <frame key="frameInset" minX="87" minY="112" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6w-qO-JQX">
+                                        <frame key="frameInset" minX="146" minY="460" width="82" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                        <state key="normal" title="Cool Kid"/>
+                                        <connections>
+                                            <segue destination="feU-51-RbI" kind="show" id="bZq-ze-p7N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm2-Eu-bca">
+                                        <frame key="frameInset" minX="143" minY="531" width="88" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="I am an adult"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="highfive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-3W-ylq">
+                                        <frame key="frameInset" minX="90" minY="320" width="194" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="LeQ-fa-gVc"/>
+                    <connections>
+                        <outlet property="loginAdult" destination="Lm2-Eu-bca" id="2m3-dh-QzQ"/>
+                        <outlet property="loginKid" destination="k6w-qO-JQX" id="9d3-nF-3A2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="133"/>
+            <point key="canvasLocation" x="-546.39999999999998" y="132.68365817091455"/>
         </scene>
         <!--BrowseGoals-->
         <scene sceneID="bs5-6c-nR5">
             <objects>
-                <viewController title="List of goals:" id="Bid-G2-TW3" userLabel="BrowseGoals" sceneMemberID="viewController">
+                <viewController id="Bid-G2-TW3" userLabel="BrowseGoals" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FVg-dR-SwU"/>
                         <viewControllerLayoutGuide type="bottom" id="m3V-oP-58N"/>
@@ -81,7 +95,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="GAU-qy-7db"/>
+                    <tabBarItem key="tabBarItem" title="Browse all goals" selectedImage="Pixel" id="GAU-qy-7db" userLabel="Browse all goals"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOn-Zj-67R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +104,7 @@
         <!--SingleGoal-->
         <scene sceneID="NAi-3e-WRl">
             <objects>
-                <viewController title="Raising funds for UNICEF by baking cakes!" id="WDu-aq-cBW" userLabel="SingleGoal" sceneMemberID="viewController">
+                <viewController id="WDu-aq-cBW" userLabel="SingleGoal" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V0G-eI-OwK"/>
                         <viewControllerLayoutGuide type="bottom" id="4gA-u7-xMD"/>
@@ -130,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="2212" y="517.6911544227886"/>
         </scene>
-        <!--Payment-->
+        <!--Payment View Controller-->
         <scene sceneID="tfW-Rd-I1W">
             <objects>
-                <viewController title="Payment" id="CYN-uZ-k7F" customClass="PaymentViewController" sceneMemberID="viewController">
+                <viewController id="CYN-uZ-k7F" customClass="PaymentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WUB-Lm-pO2"/>
                         <viewControllerLayoutGuide type="bottom" id="qoz-T7-jWK"/>
@@ -180,7 +194,7 @@
         <!--GoalSetup-->
         <scene sceneID="RJp-pi-ubT">
             <objects>
-                <viewController title="Tell us your goal!" id="UuU-Ki-CIj" userLabel="GoalSetup" customClass="GoalSetupViewController" sceneMemberID="viewController">
+                <viewController id="UuU-Ki-CIj" userLabel="GoalSetup" customClass="GoalSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bEB-Ys-OvF"/>
                         <viewControllerLayoutGuide type="bottom" id="OSF-Vg-k8P"/>
@@ -231,7 +245,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="zbS-OR-dj9"/>
+                    <tabBarItem key="tabBarItem" title="Goal Creation" selectedImage="Pixel" id="zbS-OR-dj9" userLabel="Goal Creation"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFV-tM-N2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,7 +254,7 @@
         <!--CharitySetup-->
         <scene sceneID="Zh9-a7-Izw">
             <objects>
-                <viewController title="Choose charity" id="yxc-fG-Jh1" userLabel="CharitySetup" customClass="CharitySetupViewController" sceneMemberID="viewController">
+                <viewController id="yxc-fG-Jh1" userLabel="CharitySetup" customClass="CharitySetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zSt-QW-6oX"/>
                         <viewControllerLayoutGuide type="bottom" id="Kar-nh-rzO"/>
@@ -249,77 +263,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0v-l5-ebT">
-                                <color key="backgroundColor" red="0.7362842503" green="1" blue="0.92230426759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="v93-j3-uP3"/>
-                                </constraints>
-                                <state key="normal" title="American Red Cross"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTa-da-lm5">
-                                <color key="backgroundColor" red="1" green="0.77408973299999995" blue="0.80103911120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Others..."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpZ-QL-Bq2">
-                                <color key="backgroundColor" red="0.68314500132413136" green="1" blue="0.69325845708301925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="2fW-gI-yfR"/>
-                                    <constraint firstAttribute="height" constant="277" id="3lp-Nl-N2l"/>
-                                </constraints>
-                                <state key="normal" title="Doctors Without Borders">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Doctors Without Borders">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-7x-y2N">
-                                <color key="backgroundColor" red="1" green="0.99393515293190682" blue="0.82039870836467921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="United Nations Children's Fund (UNICEF)">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyI-nK-4ld">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTQ-Nd-NLf">
+                                        <frame key="frameInset" minX="29" minY="102" width="317" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="I want to raise funds for...">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="36" name="AmericanTypewriter"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp4-gS-B7g">
+                                <frame key="frameInset" minX="192" minY="253" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="b_Nature_Conservancy"/>
                                 <connections>
-                                    <segue destination="qen-YI-zt4" kind="show" id="2IK-IS-Cei"/>
+                                    <segue destination="qen-YI-zt4" kind="show" id="ktI-1i-X3A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lD-aE-4dr">
+                                <frame key="frameInset" minX="23" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="b_Tile_ASPCA"/>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="h98-4m-24d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJM-SG-SE5">
+                                <frame key="frameInset" minX="192" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Tile_Others"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eF-NF-Lb3">
+                                <frame key="frameInset" minX="23" minY="254" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="b_Red_Cross"/>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="uxd-HN-jr0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="R0v-l5-ebT" firstAttribute="top" secondItem="UTa-da-lm5" secondAttribute="top" id="2fd-H0-dtm"/>
-                            <constraint firstItem="lLe-7x-y2N" firstAttribute="leading" secondItem="Trb-Qc-9Aq" secondAttribute="leading" id="84V-Ma-uHG"/>
-                            <constraint firstAttribute="trailing" secondItem="UTa-da-lm5" secondAttribute="trailing" constant="0.5" id="Sqq-Em-Rpa"/>
-                            <constraint firstItem="HpZ-QL-Bq2" firstAttribute="leading" secondItem="UTa-da-lm5" secondAttribute="leading" id="Uln-pi-nAn"/>
-                            <constraint firstItem="Kar-nh-rzO" firstAttribute="top" secondItem="UTa-da-lm5" secondAttribute="bottom" id="VBb-hz-Srk"/>
-                            <constraint firstItem="HpZ-QL-Bq2" firstAttribute="bottom" secondItem="lLe-7x-y2N" secondAttribute="bottom" id="XEk-cS-shB"/>
-                            <constraint firstItem="HpZ-QL-Bq2" firstAttribute="top" secondItem="lLe-7x-y2N" secondAttribute="top" id="ZEZ-u3-tnB"/>
-                            <constraint firstItem="R0v-l5-ebT" firstAttribute="leading" secondItem="lLe-7x-y2N" secondAttribute="leading" id="bGq-7b-R7c"/>
-                            <constraint firstItem="UTa-da-lm5" firstAttribute="top" secondItem="HpZ-QL-Bq2" secondAttribute="bottom" id="du5-dy-IXj"/>
-                            <constraint firstItem="lLe-7x-y2N" firstAttribute="top" secondItem="zSt-QW-6oX" secondAttribute="bottom" id="kEn-sa-87l"/>
-                            <constraint firstItem="HpZ-QL-Bq2" firstAttribute="trailing" secondItem="UTa-da-lm5" secondAttribute="trailing" id="uJS-9S-kw1"/>
-                            <constraint firstItem="R0v-l5-ebT" firstAttribute="baseline" secondItem="UTa-da-lm5" secondAttribute="firstBaseline" id="v60-Yx-tEj"/>
-                            <constraint firstItem="R0v-l5-ebT" firstAttribute="trailing" secondItem="lLe-7x-y2N" secondAttribute="trailing" id="viX-XW-I3e"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4o-n8-qkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="-905"/>
+            <point key="canvasLocation" x="2316" y="-905.3973013493254"/>
         </scene>
         <!--RecipeSetup-->
         <scene sceneID="pyg-XJ-G73">
             <objects>
-                <viewController title="Choose recipe" id="qen-YI-zt4" userLabel="RecipeSetup" sceneMemberID="viewController">
+                <viewController id="qen-YI-zt4" userLabel="RecipeSetup" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQ9-mk-z8B"/>
                         <viewControllerLayoutGuide type="bottom" id="jng-tN-11Z"/>
@@ -328,78 +333,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-LZ-1LJ">
-                                <color key="backgroundColor" red="0.7362842503" green="1" blue="0.92230426759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="JgV-xI-pCD"/>
-                                </constraints>
-                                <state key="normal" title="Something"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWN-RC-dCd">
-                                <color key="backgroundColor" red="1" green="0.77408973299999995" blue="0.80103911120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Others..."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-Lc-qmN" userLabel="SetupComplete">
-                                <color key="backgroundColor" red="1" green="0.99393515290000001" blue="0.82039870839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Baking cakes">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqH-ah-BYB">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uil-GV-NRZ">
+                                <frame key="frameInset" minX="192" minY="253" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="a_Tile_Perform_At_Parties"/>
                                 <connections>
-                                    <segue destination="xLz-77-i9G" kind="show" id="SVp-Pv-NvL"/>
+                                    <segue destination="xLz-77-i9G" kind="show" id="7Qq-np-ET8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHF-9N-xqU">
-                                <color key="backgroundColor" red="0.6831450013" green="1" blue="0.6932584571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="277" id="FIe-fW-095"/>
-                                    <constraint firstAttribute="width" constant="188" id="raz-xH-qt8"/>
-                                </constraints>
-                                <state key="normal" title="Doctors Without Borders">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Making Keychains">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngo-is-6GW">
+                                <frame key="frameInset" minX="23" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="a_Tile_Sell_Lemonade"/>
+                                <connections>
+                                    <segue destination="xLz-77-i9G" kind="show" id="IZY-xx-CZI"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-pi-TJU">
+                                <frame key="frameInset" minX="192" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Tile_Others"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-lC-WOV">
+                                <frame key="frameInset" minX="23" minY="254" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="a_Tile_Paint_Walls"/>
+                                <connections>
+                                    <segue destination="xLz-77-i9G" kind="show" id="3rY-Co-hVB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm going to..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXE-ng-Lee">
+                                <frame key="frameInset" minX="73" minY="145" width="231" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="aHF-9N-xqU" firstAttribute="top" secondItem="Fdz-Lc-qmN" secondAttribute="top" id="03m-EE-JHw"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="leading" secondItem="Fdz-Lc-qmN" secondAttribute="leading" id="1w9-2n-TYi"/>
-                            <constraint firstAttribute="trailing" secondItem="aHF-9N-xqU" secondAttribute="trailing" id="87g-jY-6fc"/>
-                            <constraint firstItem="QWN-RC-dCd" firstAttribute="top" secondItem="aHF-9N-xqU" secondAttribute="bottom" id="AeD-KT-WqX"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="firstBaseline" secondItem="QWN-RC-dCd" secondAttribute="baseline" id="FbK-Do-naB"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="trailing" secondItem="Fdz-Lc-qmN" secondAttribute="trailing" id="NgM-Gh-hg5"/>
-                            <constraint firstItem="Fdz-Lc-qmN" firstAttribute="top" secondItem="WQ9-mk-z8B" secondAttribute="bottom" id="Qjx-Q4-UU1"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="baseline" secondItem="QWN-RC-dCd" secondAttribute="firstBaseline" id="VjB-V5-EjQ"/>
-                            <constraint firstItem="aHF-9N-xqU" firstAttribute="trailing" secondItem="QWN-RC-dCd" secondAttribute="trailing" id="cQU-8U-tNY"/>
-                            <constraint firstItem="aHF-9N-xqU" firstAttribute="leading" secondItem="QWN-RC-dCd" secondAttribute="leading" id="eDD-a9-1hE"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="top" secondItem="QWN-RC-dCd" secondAttribute="top" id="fXF-Gn-Zy9"/>
-                            <constraint firstItem="2Dy-LZ-1LJ" firstAttribute="bottom" secondItem="jng-tN-11Z" secondAttribute="top" id="gUl-Lp-VOv"/>
-                            <constraint firstItem="Fdz-Lc-qmN" firstAttribute="leading" secondItem="wWJ-RU-Oqf" secondAttribute="leading" id="hi2-VT-qQz"/>
-                            <constraint firstItem="aHF-9N-xqU" firstAttribute="bottom" secondItem="Fdz-Lc-qmN" secondAttribute="bottom" id="lBE-oR-fPB"/>
-                        </constraints>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVR-wq-nim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3239" y="-486"/>
+            <point key="canvasLocation" x="3237.5999999999999" y="-486.20689655172418"/>
         </scene>
         <!--SetupComplete-->
         <scene sceneID="ggK-D7-r2Y">
             <objects>
-                <viewController title="Setup Complete!" id="xLz-77-i9G" userLabel="SetupComplete" sceneMemberID="viewController">
+                <viewController id="xLz-77-i9G" userLabel="SetupComplete" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fGW-nJ-pOE"/>
                         <viewControllerLayoutGuide type="bottom" id="439-9c-qhZ"/>
@@ -439,7 +425,7 @@
         <!--RecipeLearn-->
         <scene sceneID="Vap-cW-da2">
             <objects>
-                <viewController title="Baking a cake" id="aFC-Wd-oZB" userLabel="RecipeLearn" sceneMemberID="viewController">
+                <viewController id="aFC-Wd-oZB" userLabel="RecipeLearn" customClass="RecipeLearnViewController" customModule="HiFive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8EF-dK-MTX"/>
                         <viewControllerLayoutGuide type="bottom" id="gUC-q9-ZnV"/>
@@ -448,14 +434,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3G-D3-a5n">
-                                <frame key="frameInset" minX="16" minY="72" width="343" height="254"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-6i-AuM" customClass="YTPlayerView">
+                                <frame key="frameInset" width="375" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="youtubeViewer" destination="8AS-6i-AuM" id="tql-wz-gCs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5w-fv-VPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -464,7 +453,7 @@
         <!--CorporateSetup-->
         <scene sceneID="94J-3K-ecW">
             <objects>
-                <viewController title="Choose corporate" id="bEF-OP-83J" userLabel="CorporateSetup" customClass="CorporateSetupViewController" sceneMemberID="viewController">
+                <viewController id="bEF-OP-83J" userLabel="CorporateSetup" customClass="CorporateSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rio-UM-glD"/>
                         <viewControllerLayoutGuide type="bottom" id="c7n-n6-hYo"/>
@@ -473,86 +462,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-l2-lsl">
-                                <color key="backgroundColor" red="0.7362842503" green="1" blue="0.92230426759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="pO3-wS-RPa"/>
-                                </constraints>
-                                <state key="normal" title="The LEGO Store"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzC-Hk-ZIs">
-                                <color key="backgroundColor" red="1" green="0.77408973299999995" blue="0.80103911120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Others..."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOC-q4-39j">
-                                <color key="backgroundColor" red="1" green="0.99393515290000001" blue="0.82039870839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Toys R Us">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59J-CT-crZ">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I want to buy a..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="989-wG-KuO">
+                                        <frame key="frameInset" minX="44" minY="145" width="286" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-za-5IE">
+                                <frame key="frameInset" minX="192" minY="253" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="c_Tile_Skateboard"/>
                                 <connections>
-                                    <segue destination="qen-YI-zt4" kind="show" id="LfY-36-80d"/>
+                                    <segue destination="qen-YI-zt4" kind="show" id="cVI-Fz-0Jx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjO-HT-TzD">
-                                <color key="backgroundColor" red="0.6831450013" green="1" blue="0.6932584571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="277" id="BiM-G4-Ml3"/>
-                                    <constraint firstAttribute="width" constant="188" id="Wtj-uW-9xv"/>
-                                </constraints>
-                                <state key="normal" title="Doctors Without Borders">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="LARK Toys">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa1-8X-Yl0">
+                                <frame key="frameInset" minX="23" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="c_Tile_Guitar"/>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="DES-a0-Xey"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-QV-z2y">
+                                <frame key="frameInset" minX="192" minY="423" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Tile_Others"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-fs-jbh">
+                                <frame key="frameInset" minX="23" minY="254" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="c_Tile_Playstation"/>
+                                <connections>
+                                    <segue destination="qen-YI-zt4" kind="show" id="U5B-aa-fx3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NjO-HT-TzD" firstAttribute="bottom" secondItem="uOC-q4-39j" secondAttribute="bottom" id="0eh-YB-UUE"/>
-                            <constraint firstItem="uOC-q4-39j" firstAttribute="leading" secondItem="Qkw-hK-jcK" secondAttribute="leading" id="4wG-41-1pz"/>
-                            <constraint firstItem="Dwa-l2-lsl" firstAttribute="baseline" secondItem="bzC-Hk-ZIs" secondAttribute="firstBaseline" id="Brc-sM-Wdn"/>
-                            <constraint firstItem="NjO-HT-TzD" firstAttribute="leading" secondItem="bzC-Hk-ZIs" secondAttribute="leading" id="UPe-s0-Uqs"/>
-                            <constraint firstAttribute="trailing" secondItem="NjO-HT-TzD" secondAttribute="trailing" id="Ydc-v9-yGO"/>
-                            <constraint firstItem="Dwa-l2-lsl" firstAttribute="leading" secondItem="uOC-q4-39j" secondAttribute="leading" id="bPN-az-DNW"/>
-                            <constraint firstItem="NjO-HT-TzD" firstAttribute="top" secondItem="uOC-q4-39j" secondAttribute="top" id="f1m-iw-6EB"/>
-                            <constraint firstItem="Dwa-l2-lsl" firstAttribute="trailing" secondItem="uOC-q4-39j" secondAttribute="trailing" id="ff1-RF-JVW"/>
-                            <constraint firstItem="NjO-HT-TzD" firstAttribute="trailing" secondItem="bzC-Hk-ZIs" secondAttribute="trailing" id="lgK-5F-PXi"/>
-                            <constraint firstItem="Dwa-l2-lsl" firstAttribute="top" secondItem="bzC-Hk-ZIs" secondAttribute="top" id="udY-MV-yOa"/>
-                            <constraint firstItem="bzC-Hk-ZIs" firstAttribute="top" secondItem="NjO-HT-TzD" secondAttribute="bottom" id="v1c-gr-dFF"/>
-                            <constraint firstItem="NjO-HT-TzD" firstAttribute="top" secondItem="Rio-UM-glD" secondAttribute="bottom" id="vWm-Kz-zMD"/>
-                            <constraint firstItem="bzC-Hk-ZIs" firstAttribute="bottom" secondItem="c7n-n6-hYo" secondAttribute="top" id="xXw-fn-wW7"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9J-n3-QSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="-215"/>
+            <point key="canvasLocation" x="2316" y="-215.44227886056973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="llC-be-dWK">
             <objects>
-                <navigationController id="BDg-a9-EFn" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CW5-M7-Uzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController hidesBarsOnTap="YES" id="BDg-a9-EFn" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HgC-kR-twe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="sPl-vz-sTd">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z1E-Ro-5xB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CW5-M7-Uzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1502" y="133"/>
         </scene>
@@ -577,10 +554,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pixel" width="320" height="320"/>
+        <image name="Tile_Others" width="160" height="160"/>
         <image name="Well_done.jpg" width="1300" height="919"/>
+        <image name="a_Tile_Paint_Walls" width="160" height="160"/>
+        <image name="a_Tile_Perform_At_Parties" width="160" height="161"/>
+        <image name="a_Tile_Sell_Lemonade" width="160" height="160"/>
+        <image name="b_Nature_Conservancy" width="160" height="160"/>
+        <image name="b_Red_Cross" width="160" height="160"/>
+        <image name="b_Tile_ASPCA" width="160" height="160"/>
+        <image name="c_Tile_Guitar" width="160" height="160"/>
+        <image name="c_Tile_Playstation" width="160" height="161"/>
+        <image name="c_Tile_Skateboard" width="160" height="160"/>
+        <image name="logo_white" width="388" height="388"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2IK-IS-Cei"/>
         <segue reference="Xyt-5V-9N8"/>
+        <segue reference="3rY-Co-hVB"/>
+        <segue reference="cVI-Fz-0Jx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HiFive.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,15 +24,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>youtube-ios-player-helper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>028D61477DCAE260B2409C310856FD4B</key>
+		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4878C70B21CA37D7CB8A476BF986741B</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C3205A5D44B99026C0FB9C446D8C7D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0A4E8AE888F7876FBFC92B2A66D740E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1CBB9AB067B1DDAE5B79A853 /* Pods_HiFive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4C0AE4A19A5F05859A2934 /* Pods_HiFive.framework */; };
-		7B3793FF1DBC51B000DE1DFD /* Well_done.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */; };
+		7B85CEDE1DBC68E1003E166B /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 7B85CEDD1DBC68E1003E166B /* YTPlayerView-iframe-player.html */; };
 		7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */; };
 		7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A881DBC0E010006CA07 /* ViewController.swift */; };
 		7B8C0A8C1DBC0E010006CA07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C0A8A1DBC0E010006CA07 /* Main.storyboard */; };
 		7B8C0A8E1DBC0E010006CA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C0A8D1DBC0E010006CA07 /* Assets.xcassets */; };
 		7B8C0A911DBC0E010006CA07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C0A8F1DBC0E010006CA07 /* LaunchScreen.storyboard */; };
 		7B8C0A9C1DBC0E010006CA07 /* HiFiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A9B1DBC0E010006CA07 /* HiFiveUITests.swift */; };
+		7B8D4F181DBC5E7300C0573F /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 7B8D4F171DBC5E7300C0573F /* YTPlayerView-iframe-player.html */; };
+		7B8D4F1A1DBC61AB00C0573F /* RecipeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8D4F191DBC61AB00C0573F /* RecipeLearnViewController.swift */; };
+		7B8FF3541DBC84CF00504262 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FF3531DBC84CF00504262 /* LoginViewController.swift */; };
+		7BD0DDDE1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BD0DDDB1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html */; };
+		7BD0DDDF1DBC6DAD0040B711 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0DDDD1DBC6DAD0040B711 /* YTPlayerView.m */; };
 		D17D54C917674762E422A861 /* Pods_HiFiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEFA6444D6434A18D4F6FE5 /* Pods_HiFiveUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +37,7 @@
 		16EFFF0BCF8D7C8AD8EEDEB1 /* Pods-HiFiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiFiveUITests/Pods-HiFiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E4C0AE4A19A5F05859A2934 /* Pods_HiFive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7225DD03979DCF9F794ACB23 /* Pods-HiFiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiFiveUITests/Pods-HiFiveUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Well_done.jpg; path = HiFive/Assets.xcassets/Images/Well_done.jpg; sourceTree = "<group>"; };
+		7B85CEDD1DBC68E1003E166B /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		7B8C0A831DBC0E010006CA07 /* HiFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8C0A881DBC0E010006CA07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +48,13 @@
 		7B8C0A971DBC0E010006CA07 /* HiFiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiFiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8C0A9B1DBC0E010006CA07 /* HiFiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiFiveUITests.swift; sourceTree = "<group>"; };
 		7B8C0A9D1DBC0E010006CA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8D4F171DBC5E7300C0573F /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		7B8D4F191DBC61AB00C0573F /* RecipeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeLearnViewController.swift; sourceTree = "<group>"; };
+		7B8FF3531DBC84CF00504262 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BD0DDDB1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "../YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		7BD0DDDC1DBC6DAD0040B711 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = ../YTPlayerView.h; sourceTree = "<group>"; };
+		7BD0DDDD1DBC6DAD0040B711 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = ../YTPlayerView.m; sourceTree = "<group>"; };
+		7BD0DDE01DBC6DCD0040B711 /* HiFive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiFive-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		8B3F6E1D0BC8D790A5254462 /* Pods-HiFive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiFive/Pods-HiFive.debug.xcconfig"; sourceTree = "<group>"; };
 		8EEFA6444D6434A18D4F6FE5 /* Pods_HiFiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAC65D1B972D908DF09317D /* Pods-HiFive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFive.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiFive/Pods-HiFive.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,23 +89,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B7898411DBC370400A2585F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		7B8C0A7A1DBC0E010006CA07 = {
 			isa = PBXGroup;
 			children = (
-				7B7898411DBC370400A2585F /* Images */,
 				7B8C0A851DBC0E010006CA07 /* HiFive */,
 				7B8C0A9A1DBC0E010006CA07 /* HiFiveUITests */,
 				7B8C0A841DBC0E010006CA07 /* Products */,
 				A59112B437FDC58DCA358043 /* Pods */,
 				4F82A46EBF6C87CCB4ABB0FF /* Frameworks */,
+				7B85CEDD1DBC68E1003E166B /* YTPlayerView-iframe-player.html */,
+				7B8D4F161DBC5E7300C0573F /* Assets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +114,17 @@
 		7B8C0A851DBC0E010006CA07 /* HiFive */ = {
 			isa = PBXGroup;
 			children = (
+				7B8FF3521DBC84BA00504262 /* ViewControllers */,
 				7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */,
 				7B8C0A881DBC0E010006CA07 /* ViewController.swift */,
 				7B8C0A8A1DBC0E010006CA07 /* Main.storyboard */,
 				7B8C0A8D1DBC0E010006CA07 /* Assets.xcassets */,
 				7B8C0A8F1DBC0E010006CA07 /* LaunchScreen.storyboard */,
 				7B8C0A921DBC0E010006CA07 /* Info.plist */,
+				7BD0DDE01DBC6DCD0040B711 /* HiFive-Bridging-Header.h */,
+				7BD0DDDB1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html */,
+				7BD0DDDC1DBC6DAD0040B711 /* YTPlayerView.h */,
+				7BD0DDDD1DBC6DAD0040B711 /* YTPlayerView.m */,
 			);
 			path = HiFive;
 			sourceTree = "<group>";
@@ -126,6 +136,23 @@
 				7B8C0A9D1DBC0E010006CA07 /* Info.plist */,
 			);
 			path = HiFiveUITests;
+			sourceTree = "<group>";
+		};
+		7B8D4F161DBC5E7300C0573F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7B8D4F171DBC5E7300C0573F /* YTPlayerView-iframe-player.html */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7B8FF3521DBC84BA00504262 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B8D4F191DBC61AB00C0573F /* RecipeLearnViewController.swift */,
+				7B8FF3531DBC84CF00504262 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A59112B437FDC58DCA358043 /* Pods */ = {
@@ -233,9 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8C0A911DBC0E010006CA07 /* LaunchScreen.storyboard in Resources */,
-				7B3793FF1DBC51B000DE1DFD /* Well_done.jpg in Resources */,
+				7B85CEDE1DBC68E1003E166B /* YTPlayerView-iframe-player.html in Resources */,
 				7B8C0A8E1DBC0E010006CA07 /* Assets.xcassets in Resources */,
 				7B8C0A8C1DBC0E010006CA07 /* Main.storyboard in Resources */,
+				7BD0DDDE1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html in Resources */,
+				7B8D4F181DBC5E7300C0573F /* YTPlayerView-iframe-player.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +377,9 @@
 			files = (
 				7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */,
 				7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */,
+				7BD0DDDF1DBC6DAD0040B711 /* YTPlayerView.m in Sources */,
+				7B8FF3541DBC84CF00504262 /* LoginViewController.swift in Sources */,
+				7B8D4F1A1DBC61AB00C0573F /* RecipeLearnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,11 +519,14 @@
 			baseConfigurationReference = 8B3F6E1D0BC8D790A5254462 /* Pods-HiFive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HiFive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaharaMobileVillage.HiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiFive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -501,11 +536,13 @@
 			baseConfigurationReference = BDAC65D1B972D908DF09317D /* Pods-HiFive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HiFive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaharaMobileVillage.HiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiFive-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
