@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class GoalSetupViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var groupButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +24,34 @@ class GoalSetupViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+//    @IBAction func submitGoal(_ sender: UIButton) {
+//        guard let amount = textField.text else {
+//            return
+//        }
+//        let parameters = [
+//            "payer_id": "158fc342-8a04-4331-be9a-14cef3623afc",
+//            "payee_id": "d32db785-265b-4a6b-ac34-01822302d774",
+//            "project_id": "1",
+//            "amount" : amount
+//        ]
+//        
+//        Alamofire.request("https://celestemoney2020.herokuapp.com/transact", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+//    }
     
+    @IBAction func sendFunding(_ sender: UIButton) {
+        guard let amount = textField.text else {
+            return
+        }
+        let parameters = [
+            "payer_id": "158fc342-8a04-4331-be9a-14cef3623afc",
+            "payee_id": "d32db785-265b-4a6b-ac34-01822302d774",
+            "project_id": "1",
+            "amount" : amount
+        ]
+        
+        Alamofire.request("https://celestemoney2020.herokuapp.com/transact", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        
+    }
     func tap(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
     }

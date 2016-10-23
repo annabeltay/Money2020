@@ -269,7 +269,7 @@
         <!--SingleGoal-->
         <scene sceneID="NAi-3e-WRl">
             <objects>
-                <viewController id="WDu-aq-cBW" userLabel="SingleGoal" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singleGoalScreen" id="WDu-aq-cBW" userLabel="SingleGoal" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V0G-eI-OwK"/>
                         <viewControllerLayoutGuide type="bottom" id="4gA-u7-xMD"/>
@@ -543,6 +543,155 @@
             </objects>
             <point key="canvasLocation" x="3238" y="869"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Y81-tN-rC3">
+            <objects>
+                <viewController id="R4J-dS-98f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ZF-3j-7bi"/>
+                        <viewControllerLayoutGuide type="bottom" id="nUd-lX-fN9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vbC-Ot-tD6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qf-6C-142">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-lg-ihJ">
+                                        <frame key="frameInset" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy" translatesAutoresizingMaskIntoConstraints="NO" id="muT-oC-O5o">
+                                                <frame key="frameInset" minX="229" minY="80" width="130" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-kX-dTW">
+                                                <frame key="frameInset" minX="16" minY="94" width="144" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Project Goals:">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="20" name="AmericanTypewriter-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-Db-HBa">
+                                                <frame key="frameInset" minX="16" minY="123" width="171" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="To raise $100 for the Red Cross Association.">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="19" name="AmericanTypewriter"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8Q-0U-NYR">
+                                                <frame key="frameInset" minX="16" minY="229" width="242" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Goods / Services provided:">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="20" name="AmericanTypewriter-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-tZ-D6Q">
+                                                <frame key="frameInset" minX="8" minY="391" width="245" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Marketing Techniques:">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="20" name="AmericanTypewriter-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dev-To-QLc">
+                                                <frame key="frameInset" minX="16" minY="291" width="343" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="I will be setting up a lemonade stand at Downtown Mountain View on Sunday 12pm. While Stocks Last!">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="19" name="AmericanTypewriter"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gpp-nV-g9z">
+                                                <frame key="frameInset" minX="16" minY="432" width="343" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Look out for my hand-drawn posters that will be pasted all around Castro Street and the Caltrain Station">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="19" name="AmericanTypewriter"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-rK-NF4">
+                                                <frame key="frameInset" minX="269" minY="216" width="50" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Bob">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="19" name="AmericanTypewriter"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofW-Xa-hP4">
+                                                <frame key="frameInset" minX="140" minY="566" width="94" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Done_Button"/>
+                                                <connections>
+                                                    <segue destination="AFU-hB-vVS" kind="show" id="2Io-JU-bi2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7we-pL-wop"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmK-ga-Ds1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4028" y="1110"/>
+        </scene>
         <!--Goal Setup View Controller-->
         <scene sceneID="RJp-pi-ubT">
             <objects>
@@ -596,6 +745,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="d_Tile_Others"/>
                                                 <connections>
+                                                    <action selector="sendFunding:" destination="UuU-Ki-CIj" eventType="touchUpInside" id="Ck0-hb-ZVC"/>
                                                     <segue destination="yxc-fG-Jh1" kind="show" id="lzQ-ey-jQb"/>
                                                 </connections>
                                             </button>
@@ -626,6 +776,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FAs-lS-Pag"/>
                     <connections>
+                        <outlet property="groupButton" destination="Stp-m7-hTr" id="mLV-ri-keb"/>
                         <outlet property="textField" destination="EXp-cO-iGO" id="4tR-v7-XhC"/>
                     </connections>
                 </viewController>
@@ -800,9 +951,6 @@
                                 <frame key="frameInset" minX="194" minY="389" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="e_Tile_Logistics"/>
-                                <connections>
-                                    <segue destination="XgT-qF-vrK" kind="show" action="showDetailViewController:sender:" id="4w0-YW-y0q"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWg-Zv-lep">
                                 <frame key="frameInset" minX="194" minY="215" width="160" height="160"/>
@@ -824,7 +972,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="AFU-hB-vVS" kind="showDetail" id="1Ss-fg-aRR"/>
+                                    <segue destination="AFU-hB-vVS" kind="showDetail" id="Pp3-JY-ffU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -838,10 +986,10 @@
             </objects>
             <point key="canvasLocation" x="4028" y="-486.20689655172418"/>
         </scene>
-        <!--View Controller-->
+        <!--My Projects View Controller-->
         <scene sceneID="UEJ-Ec-sW0">
             <objects>
-                <viewController id="AFU-hB-vVS" sceneMemberID="viewController">
+                <viewController id="AFU-hB-vVS" customClass="MyProjectsViewController" customModule="HiFive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OK8-8v-Mef"/>
                         <viewControllerLayoutGuide type="bottom" id="Ywp-E3-iHs"/>
@@ -881,21 +1029,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="proj_completed"/>
                                 <connections>
-                                    <segue destination="weB-0n-S0X" kind="showDetail" id="dpQ-OP-y8v"/>
+                                    <action selector="selectProject:" destination="AFU-hB-vVS" eventType="touchUpInside" id="M47-uc-2Vs"/>
                                 </connections>
                             </button>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsD-E9-VwQ">
+                                <frame key="frameInset" minX="279" minY="161" width="80" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IHv-2q-Zyp"/>
+                    <connections>
+                        <outlet property="percentageLabel" destination="zsD-E9-VwQ" id="pee-FK-v7m"/>
+                        <segue destination="weB-0n-S0X" kind="showDetail" identifier="first" id="lIl-3D-3RU"/>
+                        <segue destination="R4J-dS-98f" kind="show" identifier="second" id="kha-gS-KXL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtv-WS-GHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4028" y="242"/>
+            <point key="canvasLocation" x="4028" y="232.53373313343329"/>
         </scene>
-        <!--View Controller-->
+        <!--Congrats View Controller-->
         <scene sceneID="GI5-fu-oXv">
             <objects>
-                <viewController id="weB-0n-S0X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="congratsScreen" id="weB-0n-S0X" customClass="CongratsViewController" customModule="HiFive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z4g-TU-FFm"/>
                         <viewControllerLayoutGuide type="bottom" id="QS5-US-kdt"/>
@@ -1281,10 +1443,11 @@
         <image name="round-add-button" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cl5-d5-Qhu"/>
-        <segue reference="wXl-Lk-gqo"/>
+        <segue reference="2pZ-Y5-vrP"/>
+        <segue reference="2Io-JU-bi2"/>
         <segue reference="uxd-HN-jr0"/>
-        <segue reference="VfX-Zj-fa2"/>
+        <segue reference="cl5-d5-Qhu"/>
         <segue reference="ErZ-O9-mlW"/>
+        <segue reference="VfX-Zj-fa2"/>
     </inferredMetricsTieBreakers>
 </document>

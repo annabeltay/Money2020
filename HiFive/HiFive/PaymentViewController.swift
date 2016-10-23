@@ -15,10 +15,14 @@ class PaymentViewController: UIViewController {
     @IBOutlet weak var textField: UIView!
     @IBAction func fundButtonPressed(_ sender: UIButton) {
         
+        guard let amount = moneyField.text else {
+            return
+        }
         let parameters = [
             "payer_id": "158fc342-8a04-4331-be9a-14cef3623afc",
             "payee_id": "d32db785-265b-4a6b-ac34-01822302d774",
-            "project_id": "1"
+            "project_id": "1",
+            "amount" : amount
         ]
         
         Alamofire.request("https://celestemoney2020.herokuapp.com/transact", method: .post, parameters: parameters, encoding: JSONEncoding.default)

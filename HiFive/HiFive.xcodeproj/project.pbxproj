@@ -22,6 +22,9 @@
 		7B8D4F1A1DBC61AB00C0573F /* RecipeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8D4F191DBC61AB00C0573F /* RecipeLearnViewController.swift */; };
 		7B8FF3541DBC84CF00504262 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FF3531DBC84CF00504262 /* LoginViewController.swift */; };
 		7B955E9A1DBCE29E0086643A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B955E991DBCE29E0086643A /* PaymentViewController.swift */; };
+		7BA0A56F1DBD0C2100617781 /* MyProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A56E1DBD0C2100617781 /* MyProjectsViewController.swift */; };
+		7BA0A5711DBD1F1200617781 /* CongratsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A5701DBD1F1200617781 /* CongratsViewController.swift */; };
+		7BA0A5731DBD1F6F00617781 /* SingleGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A5721DBD1F6F00617781 /* SingleGoalViewController.swift */; };
 		7BD0DDDE1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BD0DDDB1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html */; };
 		7BD0DDDF1DBC6DAD0040B711 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0DDDD1DBC6DAD0040B711 /* YTPlayerView.m */; };
 		D17D54C917674762E422A861 /* Pods_HiFiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEFA6444D6434A18D4F6FE5 /* Pods_HiFiveUITests.framework */; };
@@ -59,6 +62,9 @@
 		7B8D4F191DBC61AB00C0573F /* RecipeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeLearnViewController.swift; sourceTree = "<group>"; };
 		7B8FF3531DBC84CF00504262 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7B955E991DBCE29E0086643A /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		7BA0A56E1DBD0C2100617781 /* MyProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProjectsViewController.swift; sourceTree = "<group>"; };
+		7BA0A5701DBD1F1200617781 /* CongratsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratsViewController.swift; sourceTree = "<group>"; };
+		7BA0A5721DBD1F6F00617781 /* SingleGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGoalViewController.swift; sourceTree = "<group>"; };
 		7BD0DDDB1DBC6DAD0040B711 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "../YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		7BD0DDDC1DBC6DAD0040B711 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = ../YTPlayerView.h; sourceTree = "<group>"; };
 		7BD0DDDD1DBC6DAD0040B711 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = ../YTPlayerView.m; sourceTree = "<group>"; };
@@ -163,6 +169,9 @@
 				7B0DA5D81DBCCA6200D8F0A1 /* MarketInfoViewController.swift */,
 				7B955E991DBCE29E0086643A /* PaymentViewController.swift */,
 				7B1D16131DBCED6C0030BBFC /* LearningPageViewController.swift */,
+				7BA0A56E1DBD0C2100617781 /* MyProjectsViewController.swift */,
+				7BA0A5701DBD1F1200617781 /* CongratsViewController.swift */,
+				7BA0A5721DBD1F6F00617781 /* SingleGoalViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA0A56F1DBD0C2100617781 /* MyProjectsViewController.swift in Sources */,
+				7BA0A5731DBD1F6F00617781 /* SingleGoalViewController.swift in Sources */,
 				7B0DA5D91DBCCA6200D8F0A1 /* MarketInfoViewController.swift in Sources */,
 				7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */,
 				7B1D16141DBCED6C0030BBFC /* LearningPageViewController.swift in Sources */,
@@ -396,6 +407,7 @@
 				7BD0DDDF1DBC6DAD0040B711 /* YTPlayerView.m in Sources */,
 				7B8FF3541DBC84CF00504262 /* LoginViewController.swift in Sources */,
 				7B8D4F1A1DBC61AB00C0573F /* RecipeLearnViewController.swift in Sources */,
+				7BA0A5711DBD1F1200617781 /* CongratsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
