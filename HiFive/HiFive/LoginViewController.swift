@@ -16,10 +16,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        loginKid.layer.cornerRadius = 2;
         loginKid.layer.borderWidth = 1;
-        loginKid.layer.borderColor = UIColor.white;
+        loginKid.layer.cornerRadius = 20
+        loginKid.layer.borderColor = UIColor.white.cgColor
+        loginAdult.layer.borderWidth = 1;
+        loginAdult.layer.cornerRadius = 20
+        loginAdult.layer.borderColor = UIColor.white.cgColor
     }
     
     override func didReceiveMemoryWarning() {
