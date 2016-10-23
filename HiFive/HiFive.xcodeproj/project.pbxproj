@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CBB9AB067B1DDAE5B79A853 /* Pods_HiFive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4C0AE4A19A5F05859A2934 /* Pods_HiFive.framework */; };
-		7B7898431DBC371500A2585F /* Well_done.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7898421DBC371500A2585F /* Well_done.jpg */; };
-		7B7898451DBC3B0900A2585F /* RecipeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7898441DBC3B0900A2585F /* RecipeLearnViewController.swift */; };
-		7B7898471DBC3B9600A2585F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7898461DBC3B9600A2585F /* WebView.swift */; };
+		7B3793FF1DBC51B000DE1DFD /* Well_done.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */; };
 		7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */; };
 		7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C0A881DBC0E010006CA07 /* ViewController.swift */; };
 		7B8C0A8C1DBC0E010006CA07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C0A8A1DBC0E010006CA07 /* Main.storyboard */; };
@@ -34,9 +32,7 @@
 		16EFFF0BCF8D7C8AD8EEDEB1 /* Pods-HiFiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiFiveUITests/Pods-HiFiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E4C0AE4A19A5F05859A2934 /* Pods_HiFive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7225DD03979DCF9F794ACB23 /* Pods-HiFiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiFiveUITests/Pods-HiFiveUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7B7898421DBC371500A2585F /* Well_done.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Well_done.jpg; sourceTree = "<group>"; };
-		7B7898441DBC3B0900A2585F /* RecipeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeLearnViewController.swift; sourceTree = "<group>"; };
-		7B7898461DBC3B9600A2585F /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Well_done.jpg; path = HiFive/Assets.xcassets/Images/Well_done.jpg; sourceTree = "<group>"; };
 		7B8C0A831DBC0E010006CA07 /* HiFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8C0A861DBC0E010006CA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8C0A881DBC0E010006CA07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +80,7 @@
 		7B7898411DBC370400A2585F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7B7898421DBC371500A2585F /* Well_done.jpg */,
+				7B3793FE1DBC51B000DE1DFD /* Well_done.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -119,8 +115,6 @@
 				7B8C0A8D1DBC0E010006CA07 /* Assets.xcassets */,
 				7B8C0A8F1DBC0E010006CA07 /* LaunchScreen.storyboard */,
 				7B8C0A921DBC0E010006CA07 /* Info.plist */,
-				7B7898441DBC3B0900A2585F /* RecipeLearnViewController.swift */,
-				7B7898461DBC3B9600A2585F /* WebView.swift */,
 			);
 			path = HiFive;
 			sourceTree = "<group>";
@@ -239,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8C0A911DBC0E010006CA07 /* LaunchScreen.storyboard in Resources */,
-				7B7898431DBC371500A2585F /* Well_done.jpg in Resources */,
+				7B3793FF1DBC51B000DE1DFD /* Well_done.jpg in Resources */,
 				7B8C0A8E1DBC0E010006CA07 /* Assets.xcassets in Resources */,
 				7B8C0A8C1DBC0E010006CA07 /* Main.storyboard in Resources */,
 			);
@@ -353,9 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8C0A891DBC0E010006CA07 /* ViewController.swift in Sources */,
-				7B7898471DBC3B9600A2585F /* WebView.swift in Sources */,
 				7B8C0A871DBC0E010006CA07 /* AppDelegate.swift in Sources */,
-				7B7898451DBC3B0900A2585F /* RecipeLearnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
